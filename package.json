@@ -1,0 +1,29 @@
+{
+  "name": "@littlefattie/solve-equations",
+  "version": "1.0.0",
+  "description": "Methods for solving linear, quadratic, cubic and quartic equations with only one unknown x.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run clean && tsc -p tsconfig.json",
+    "buildtest": "tsc -p tsconfig.test.json",
+    "test": "npm run buildtest && ava",
+    "clean": "rm -rf ./dist/*"
+  },
+  "keywords": [
+    "equation",
+    "solve-equation",
+    "quadratic",
+    "quartic"
+  ],
+  "ava": {
+    "require": [
+      "esm"
+    ]
+  },
+  "author": "Little Fattie",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "esm": "^3.2.25"
+  }
+}
