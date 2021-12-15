@@ -1,6 +1,6 @@
 {
   "name": "@littlefattie/solve-equations",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Methods for solving linear, quadratic, cubic and quartic equations with only one unknown x.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
