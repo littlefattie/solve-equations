@@ -59,6 +59,20 @@ test("Test quartic solving:", t => {
   t.true(res.filter(r => nearlyEqualC(r, c4)).length === 1);
 
   /**
+   * Test the equation of $ (x^2 - 1) * (x^2 + x + 1)= 0 $
+   */
+   res = solveQuartic(1, 1, 0, -1, -1);
+   t.is(res.length, 4);
+   c1 = {re: -0.5, im:  Math.sqrt(3) / 2};
+   c2 = {re: -0.5, im: -Math.sqrt(3) / 2};
+   r1 = 1;
+   r2 = -1;
+   t.true(res.filter(r => nearlyEqualC(r, c1)).length === 1);
+   t.true(res.filter(r => nearlyEqualC(r, c2)).length === 1);
+   t.true(res.filter(r => nearlyEqual(r1, r.re) && r.im === 0).length === 1);
+   t.true(res.filter(r => nearlyEqual(r2, r.re) && r.im === 0).length === 1);
+
+  /**
    * Test the equation of $ x^4 + x^3 + x^2 + x + 1 = 0 $
    */
   res = solveQuartic(1, 1, 1, 1, 1);

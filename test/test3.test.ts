@@ -14,6 +14,15 @@ test("Test cubic solving:", t => {
   t.true(nearlyEqual(1, res[0].re));
 
   /**
+   * Test the equation of $ (x-1)(x-2)(x-3) = 0 $
+   */
+  res = solveCubic(1, -6, 11, -6);
+  t.is(res.length, 3);
+  t.true(res.filter(r => nearlyEqual(r.re, 1)).length === 1);
+  t.true(res.filter(r => nearlyEqual(r.re, 2)).length === 1);
+  t.true(res.filter(r => nearlyEqual(r.re, 3)).length === 1);
+
+  /**
    * Test the equation of $ (x - 1) ^ 2 * (x + 1) = 0 $
    */
   res = solveCubic(1, -1, -1, 1);

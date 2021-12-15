@@ -51,4 +51,9 @@ export function solveCubic(a: number, b: number, c: number, d: number): IComplex
       ]
       .map(y => {return {re: y.re + b3, im: y.im }});
   }
+  // For Delta > 0 and Delta < 0, we can unnify them, i.e. CPX.sqrtn(C, 3).
+  // But condidering the calculation precision, it would be possible that
+  // the result is truly some real, but it is presented as a complex with very small
+  // imagenary part. So here we can split it to different case, to ensure that we get
+  // very clear and definite results for "pure-real" roots, with imagenry part being 0.
 }

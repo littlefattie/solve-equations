@@ -3,16 +3,26 @@
   "version": "1.0.0",
   "description": "Methods for solving linear, quadratic, cubic and quartic equations with only one unknown x.",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "npm run clean && tsc -p tsconfig.json",
-    "buildtest": "tsc -p tsconfig.test.json",
+    "buildtest": "npm run clean && tsc -p tsconfig.test.json",
     "test": "npm run buildtest && ava",
     "clean": "rm -rf ./dist/*"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/littlefattie/solve-equations.git"
+  },
+  "bugs": {
+    "url": "https://github.com/littlefattie/solve-equations/issues"
+  },
+  "homepage": "https://github.com/littlefattie/solve-equations#readme",
   "keywords": [
     "equation",
     "solve-equation",
     "quadratic",
+    "linear",
     "quartic"
   ],
   "ava": {
