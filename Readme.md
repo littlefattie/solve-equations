@@ -17,7 +17,7 @@ import { solveLinear, solveQuadratic, solveCubic, solveQuartic } from "@littlefa
 const res1 = solveLinear(2, 1);
 
 // This should be
-//   x = -1/2 +/- sqrt(3)/2 i
+//   x1,2 = -1/2 +/- sqrt(3)/2 i
 // for equation $x^2+x+1=0$
 const res2 = solveQuadratic(1, 1, 1);
 
