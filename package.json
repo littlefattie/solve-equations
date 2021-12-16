@@ -27,9 +27,9 @@
     "quartic"
   ],
   "files": [
-    "./src/",
-    "./docs/",
-    "./dist/"
+    "src/**/*.*",
+    "docs/**/*.*",
+    "dist/**/*.*"
   ],
   "author": "Little Fattie",
   "license": "ISC",
