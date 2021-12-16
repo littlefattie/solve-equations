@@ -1,9 +1,9 @@
 import test from "ava";
 import { IComplex } from "../src/IComplex";
-import { solveLinear } from "../src/solveLinear";
+import { solveLinear } from "../src/solveLinear.js";
 
 
-import { nearlyEqual, nearlyEqualC } from "../src/testUtils";
+import { nearlyEqual, nearlyEqualC } from "../src/testUtils.js";
 
 test("Test Linear solving:", t => {
   

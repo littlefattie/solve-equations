@@ -1,7 +1,7 @@
-import CPX from "./Complex";
+import CPX from "./Complex.js";
 import { IComplex } from "./IComplex";
-import { solveQuadratic } from "./solveQuadratic";
-import { isZero, sqrt3} from "./utils";
+import { solveQuadratic } from "./solveQuadratic.js";
+import { isZero, sqrt3} from "./utils.js";
 
 export function solveCubic(a: number, b: number, c: number, d: number): IComplex[] {
   if (a === 0) return solveQuadratic(b, c, d);

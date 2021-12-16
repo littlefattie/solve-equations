@@ -1,8 +1,8 @@
 import test from "ava";
 import { IComplex } from "../src/IComplex";
-import { solveCubic } from "../src/solveCubic";
+import { solveCubic } from "../src/solveCubic.js";
 
-import { nearlyEqual, nearlyEqualC } from "../src/testUtils";
+import { nearlyEqual, nearlyEqualC } from "../src/testUtils.js";
 
 test("Test cubic solving:", t => {
   let res: IComplex[] = [];

@@ -1,6 +1,5 @@
-import test from "ava";
 import { IComplex } from "./IComplex";
-import { isZero } from "./utils";
+import { isZero } from "./utils.js";
 
 export const nearlyEqual = (x1: number, x2: number) => {return isZero(x1 - x2);}
 export const nearlyEqualC = (c1: IComplex, c2: IComplex) => {

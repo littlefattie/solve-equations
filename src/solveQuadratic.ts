@@ -1,6 +1,6 @@
 import { IComplex } from "./IComplex";
-import { solveLinear } from "./solveLinear";
-import { isZero } from "./utils";
+import { solveLinear } from "./solveLinear.js";
+import { isZero } from "./utils.js";
 
 export function solveQuadratic(a: number, b: number, c: number): IComplex[]
 {

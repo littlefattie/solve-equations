@@ -4,6 +4,7 @@
   "description": "Methods for solving linear, quadratic, cubic and quartic equations with only one unknown x.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "build": "npm run clean && tsc -p tsconfig.json",
     "buildtest": "npm run clean && tsc -p tsconfig.test.json",
@@ -25,15 +26,10 @@
     "linear",
     "quartic"
   ],
-  "ava": {
-    "require": [
-      "esm"
-    ]
-  },
+  "files": ["./src", "./docs", "./dist"],
   "author": "Little Fattie",
   "license": "ISC",
   "devDependencies": {
-    "ava": "^3.15.0",
-    "esm": "^3.2.25"
+    "ava": "^3.15.0"
   }
 }
